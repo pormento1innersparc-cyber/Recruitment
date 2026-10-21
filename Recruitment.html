@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maging Real Estate Agent | Cynthia M. Martin</title>
+<meta name="description" content="Gusto mong maging real estate agent? Sagutan ang maikling survey at kausapin si Cynthia M. Martin.">
+<script>document.documentElement.className += ' js';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1F4D;--navy2:#132a63;--gold:#C8A24D;--gold2:#dcbb6d;--ink:#1c2233;--mute:#5d6577;--bg:#f6f7fa;--white:#fff;
+--serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h1,h2,h3{font-family:var(--serif);color:var(--navy);line-height:1.2}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:12px}
+.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;margin-bottom:10px}
+.lead{color:var(--mute);max-width:620px;margin-bottom:36px;font-size:1.05rem}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);border:0;border-radius:8px;padding:15px 28px;font:700 1rem var(--sans);cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(200,162,77,.35)}
+.btn:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.btn.ghost{background:transparent;border:2px solid var(--gold);color:var(--gold)}
+.btn.sm{padding:10px 18px;font-size:.9rem}
+.btn.cta{border-radius:999px;padding:16px 34px}
+.btn.cta.sm{padding:10px 20px}
+.btn.cta.glow{animation:glow 2.4s ease-in-out infinite}
+.btn .short{display:none}
+@media(max-width:560px){.btn .long{display:none}.btn .short{display:inline}}
+
+/* loader */
+#loader{position:fixed;inset:0;background:var(--navy);display:grid;place-items:center;z-index:200;transition:opacity .5s}
+#loader.hide{opacity:0;pointer-events:none}
+#loader img{width:90px;animation:pulse 1.4s infinite}
+@keyframes pulse{50%{transform:scale(1.08);opacity:.7}}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(11,31,77,.96);backdrop-filter:blur(8px);border-bottom:2px solid var(--gold)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:var(--serif);font-weight:700;text-decoration:none}
+.brand img{height:38px;width:auto}
+@media(max-width:480px){.brand span{display:none}}
+
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2rem,5vw,3.2rem);margin-bottom:16px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{color:#d5dbea;font-size:1.1rem;margin-bottom:26px;max-width:520px}
+.hero small{display:block;margin-top:14px;color:#9fadd0}
+.commission-note{max-width:520px;margin-top:22px;padding:13px 16px;border-left:3px solid var(--gold);border-radius:0 10px 10px 0;background:rgba(255,255,255,.08);color:#e7ebf7;font-size:.88rem;line-height:1.55}
+.commission-note strong{color:var(--gold2)}
+.portrait{border-radius:20px;border:3px solid var(--gold);box-shadow:0 20px 50px rgba(0,0,0,.35);aspect-ratio:4/5;object-fit:cover;width:100%;background:var(--navy2)}
+@media(max-width:800px){.hero .wrap{grid-template-columns:1fr}.portrait{max-width:300px;margin:0 auto;order:-1}.hero{text-align:center}.hero p{margin-left:auto;margin-right:auto}}
+
+/* cards */
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--white);border-radius:14px;padding:26px;border:1px solid #e6e9f0;border-top:4px solid var(--gold);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(11,31,77,.1)}
+.pimg{display:block;width:calc(100% + 52px);max-width:none;margin:-26px -26px 18px;aspect-ratio:4/3;object-fit:cover;background:#dfe3ec}
+.card{overflow:hidden}
+.card .ic{font-size:1.6rem;margin-bottom:10px}
+.card h3{font-size:1.15rem;margin-bottom:8px;font-family:var(--sans);font-weight:700}
+.card p{color:var(--mute);font-size:.95rem}
+.dark{background:var(--navy);}
+.dark h2{color:#fff}.dark .lead{color:#c3cce3}
+.pain-turn{margin-top:34px;font-family:var(--serif);font-size:1.3rem;color:var(--gold)}
+
+/* steps */
+.steps{counter-reset:s;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.step{background:var(--white);border-radius:14px;padding:26px;position:relative;border:1px solid #e6e9f0}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--gold);font-weight:700;margin-bottom:12px}
+.step h3{font-family:var(--sans);font-size:1.05rem;margin-bottom:6px}
+.step p{color:var(--mute);font-size:.93rem}
+
+/* about */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+.about img{border-radius:16px;box-shadow:0 14px 34px rgba(11,31,77,.18);aspect-ratio:4/3;object-fit:cover;width:100%;background:#dfe3ee}
+.about p{color:var(--mute);margin-bottom:14px}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+
+/* faq */
+.faq{max-width:760px;margin:0 auto}
+details{background:var(--white);border:1px solid #e6e9f0;border-radius:12px;margin-bottom:12px;overflow:hidden}
+summary{cursor:pointer;padding:18px 22px;font-weight:600;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--gold);font-size:1.4rem;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 22px 20px;color:var(--mute)}
+
+/* final cta + footer */
+.final{background:linear-gradient(135deg,var(--navy),var(--navy2));text-align:center;color:#fff}
+.final h2{color:#fff}.final p{color:#c3cce3;max-width:560px;margin:0 auto 26px}
+footer{background:#08163a;color:#8d9bc0;font-size:.82rem;padding:26px 0;text-align:center}
+footer p{max-width:700px;margin:0 auto 6px}
+
+/* modal */
+#modal{position:fixed;inset:0;background:rgba(6,14,38,.72);display:none;align-items:center;justify-content:center;padding:16px;z-index:150}
+#modal.open{display:flex}
+.panel{background:#fff;border-radius:18px;width:100%;max-width:520px;max-height:92vh;max-height:92dvh;overflow:auto;padding:28px 26px;position:relative;animation:pop .28s ease}
+@keyframes pop{from{transform:translateY(16px) scale(.98);opacity:0}}
+.x{position:absolute;top:12px;right:14px;background:none;border:0;font-size:1.7rem;color:var(--mute);cursor:pointer;line-height:1}
+.bar{height:6px;background:#e8ebf3;border-radius:4px;margin:14px 0 20px;overflow:hidden}
+.bar i{display:block;height:100%;width:33%;background:var(--gold);transition:width .3s}
+.panel h3{font-size:1.35rem;padding-right:24px}
+.stepnote{color:var(--mute);font-size:.88rem}
+label{display:block;font-weight:600;font-size:.88rem;margin:14px 0 5px;color:var(--navy)}
+input,select,textarea{width:100%;padding:12px 13px;border:1.5px solid #cfd5e3;border-radius:8px;font:inherit;background:#fff}
+textarea{min-height:96px;resize:vertical}
+select{-webkit-appearance:none;appearance:none;padding-right:42px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%230B1F4D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center;cursor:pointer}
+.err{color:#b3261e;font-size:.8rem;min-height:1em;margin-top:3px}
+.chk{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:.82rem;color:var(--mute);font-weight:400}
+.chk input{width:auto;margin-top:3px}
+.nav-btns{display:flex;justify-content:space-between;gap:10px;margin-top:22px}
+.nav-btns .btn{flex:1}
+.nav-btns .back{background:#eef0f6;color:var(--navy)}
+.hp{position:absolute;left:-9999px}
+.notice{background:#fbf6e8;border-left:4px solid var(--gold);border-radius:8px;padding:12px 14px;font-size:.88rem;color:var(--ink);margin:14px 0 2px;line-height:1.5}
+.hint{display:block;color:var(--mute);font-size:.78rem;font-weight:400;margin:-2px 0 5px}
+.more{margin-top:2px}
+#painGrid,#teamGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.tgrid .tcard:last-child:nth-child(3n+1),.tgrid .tcard:last-child:nth-child(2n+1){grid-column:auto;width:auto;justify-self:stretch}
+@media(max-width:600px){#painGrid,#teamGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.tgrid .tcard:last-child:nth-child(n){grid-column:auto;width:auto}}
+.tcard{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 10px 28px rgba(11,31,77,.10);text-align:left;transition:transform .25s,box-shadow .25s}
+.tcard:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(11,31,77,.16)}
+.timg{position:relative;display:block;width:100%;padding:0;border:0;background:#dfe3ee;cursor:zoom-in;aspect-ratio:3/2;overflow:hidden}
+.timg img{width:100%;height:100%;max-width:none;object-fit:cover;transition:transform .5s}
+.tcard:hover .timg img{transform:scale(1.04)}
+.timg:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.tbadge{position:absolute;top:12px;left:12px;background:var(--gold);color:#fff;font:700 .78rem var(--sans);padding:6px 14px;border-radius:999px;box-shadow:0 3px 8px rgba(0,0,0,.18)}
+.tbody{padding:16px 18px 20px}
+.tbody h3{font-family:var(--sans);font-size:1.02rem;font-weight:700;color:var(--navy);margin-bottom:5px}
+.tbody p{color:var(--ink);font-size:.93rem;line-height:1.55}
+#lb{position:fixed;inset:0;background:rgba(6,14,38,.93);display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px;z-index:160;padding:16px}
+#lb.open{display:flex}
+#lb img{max-width:min(94vw,1100px);max-height:78vh;width:auto;height:auto;border-radius:10px;object-fit:contain;background:#0a1a45}
+#lbCap{color:#fff;font-size:.95rem;text-align:center}
+#lb .lbb{position:absolute;background:var(--gold);color:var(--navy);border:0;border-radius:50%;width:46px;height:46px;font-size:1.3rem;font-weight:700;cursor:pointer;display:grid;place-items:center}
+#lb .lbb:hover{background:var(--gold2)}
+#lbX{top:14px;right:14px}#lbP{left:12px;top:50%}#lbN{right:12px;top:50%}
+@media(max-width:600px){#lbP,#lbN{top:auto;bottom:18px}#lbP{left:calc(50% - 56px)}#lbN{right:calc(50% - 56px)}}
+.done .tick{animation:tickpop .5s cubic-bezier(.2,.9,.3,1.4)}
+@keyframes tickpop{from{transform:scale(.3);opacity:0}}
+.done{text-align:center;padding:14px 0}
+.done .tick{width:64px;height:64px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-size:2rem;margin:0 auto 14px}
+.hidden{display:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* entrance animations */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .reveal.left{transform:translateX(-36px)}
+.js .reveal.right{transform:translateX(36px)}
+.js .reveal.zoom{transform:scale(.94)}
+.js .reveal.in{opacity:1;transform:none}
+.js body:not(.ready) .hero-in{opacity:0}
+body.ready .hero-in{animation:rise .85s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:var(--d,0s)}
+body.ready .hero-in.pop{animation-name:risepop}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}}
+@keyframes risepop{from{opacity:0;transform:scale(.92) translateY(18px)}}
+.js nav{transform:translateY(-100%)}
+body.ready nav{transform:none;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+body.ready .hero .btn{animation:rise .85s cubic-bezier(.2,.7,.2,1) .55s backwards,glow 2.4s ease-in-out 1.8s infinite}
+@keyframes glow{50%{box-shadow:0 0 0 10px rgba(200,162,77,.22)}}
+@media(prefers-reduced-motion:reduce){.js .reveal,.js .hero-in,.js body:not(.ready) .hero-in{opacity:1!important;transform:none!important}.js nav{transform:none!important}}
+.swipe{display:none;text-align:center;color:var(--mute);font-size:.82rem;margin-top:-4px}
+
+/* ===== phones ===== */
+.chk input{width:20px;height:20px;flex:none;accent-color:var(--gold)}
+.chk{font-size:.88rem;line-height:1.45}
+.x{width:44px;height:44px;top:6px;right:6px;font-size:1.9rem}
+.nav-btns{position:sticky;bottom:-28px;background:#fff;padding:12px 0 28px;margin:14px 0 -28px;box-shadow:0 -12px 12px -8px rgba(255,255,255,.95)}
+@media(max-width:700px){
+  section{padding:52px 0}
+  .hero{padding:36px 0 48px}
+  .portrait{max-width:210px}
+  .btn.cta{padding:15px 22px;font-size:.95rem}
+  .hero .btn.cta{width:100%;max-width:360px}
+  .btn.sm.cta{white-space:nowrap;flex-shrink:0;padding:12px 16px;font-size:.88rem}
+  .panel{padding:24px 20px 28px;padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))}
+  #painGrid,#teamGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row;gap:14px;overflow-x:visible;margin:0;padding:6px 0 16px}
+  #painGrid>*,#teamGrid>*{scroll-snap-align:unset;min-width:0}
+  .swipe{display:none}
+}
+</style>
+</head>
+<body>
+
+<div id="loader"><img id="ldLogo" alt="Loading"></div>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><img id="navLogo" alt="Mommy Property Finder logo"><span>Cynthia M. Martin</span></a>
+  <button class="btn sm cta" data-open><span class="long">Could This Be My Next Career?</span><span class="short">My Next Career?</span></button>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <p class="eyebrow" style="margin-bottom:12px">Hi, I'm Cynthia</p>
+    <h1>Want to get into real estate, <em>but not sure where to start?</em></h1>
+    <p>Okay lang 'yan, normal 'yan. Sagutan mo lang ang 2-minute survey, tapos mag-usap tayo. I'll tell you straight kung ano talaga ang trabaho ng isang agent. No pressure, walang pilitan.</p>
+    <button class="btn cta glow" data-open>Could This Be My Next Career?</button>
+    <small>Free ito, walang commitment, at 2 minutes lang.</small>
+    <div class="commission-note"><strong>Important:</strong> Commission-based ang income sa real estate. Walang fixed salary at walang guaranteed income. Kumikita kapag may successful deal.</div>
+  </div>
+  <img class="portrait" id="heroImg" alt="Cynthia M. Martin">
+</div></header>
+
+<section id="pain"><div class="wrap center">
+  <p class="eyebrow">Sound familiar?</p>
+  <h2>You might be feeling this too</h2>
+  <p class="lead">Normal lang na gusto mo ng extra income. Ang mahirap, hindi mo alam kung saan ka magsisimula.</p>
+  <div class="grid" id="painGrid" style="text-align:left">
+    <div class="card"><img class="pimg" data-d="12tTCS2LattYvz67fRxFC0_3bScS79UL7" alt="Larawan para sa: One paycheck, no backup" loading="lazy" onerror="this.style.display='none'"><h3>One paycheck, no backup</h3><p>Iisa lang ang pinagkukunan mo ng income. Pag may biglaang gastos, wala kang backup.</p></div>
+    <div class="card"><img class="pimg" data-d="1Pwc0VZaxgazRUZb8j-B38obwT_URLFUp" alt="Larawan para sa: No idea where to start" loading="lazy" onerror="this.style.display='none'"><h3>No idea where to start</h3><p>Gusto mong subukan ang real estate, pero ang gulo ng license, ng process, at ng papeles. Hindi mo alam kung alin ang uunahin.</p></div>
+    <div class="card"><img class="pimg" data-d="17FndyNn_4WLmUzD_dH-RDY1TUvuB32yL" alt="Larawan para sa: No leads, no network" loading="lazy" onerror="this.style.display='none'"><h3>No leads, no network</h3><p>Feeling mo kulang ang kakilala mo para makakuha ng client, at baka hindi ka pa seryosohin ng iba.</p></div>
+    <div class="card"><img class="pimg" data-d="1YmJptbwXVI9-zKl0FGfxxBaeLFlqOMND" alt="Larawan para sa: Doing it alone" loading="lazy" onerror="this.style.display='none'"><h3>Doing it alone</h3><p>Ang hirap matuto kung mag-isa ka lang. Tapos pag may client ka na, mahal ang magkamali.</p></div>
+    <div class="card"><img class="pimg" data-d="1NCD8lgJNgnftDcUaBzD5VFGXGYRgyB9B" alt="Larawan para sa: No time to spare" loading="lazy" onerror="this.style.display='none'"><h3>No time to spare</h3><p>Trabaho at pamilya pa lang, ubos na ang oras mo. Saan ka pa kukuha ng time para sa bagong career?</p></div>
+    <div class="card"><img class="pimg" data-d="1UKSkDb-GGrqq_mUi397Wp-Jfcc_DgLmw" alt="Larawan para sa: Fear of wasting effort" loading="lazy" onerror="this.style.display='none'"><h3>Fear of wasting effort</h3><p>May nakita ka nang mga nag-quit sa real estate, at ayaw mong masayang ang time, pera, at effort mo.</p></div>
+  </div>
+  <p class="swipe">Swipe para makita ang iba &rarr;</p>
+  <p class="pain-turn">You don't have to do this alone.</p>
+</div></section>
+
+<section class="dark" id="offer"><div class="wrap center">
+  <p class="eyebrow">When you talk to me</p>
+  <h2>Honest talk first, then a plan</h2>
+  <p class="lead">Here's what you can expect from me.</p>
+  <div class="grid" style="text-align:left">
+    <div class="card"><div class="ic">🤝</div><h3>Honest conversation</h3><p>Sasabihin ko sa 'yo kung ano talaga ang trabaho, pati ang mahihirap na parte, bago ka mag-decide.</p></div>
+    <div class="card"><div class="ic">🏢</div><h3>Part of InnerSparc Realty</h3><p>Affiliated ako sa InnerSparc Realty Corporation, at licensed ang may-ari nito.</p></div>
+    <div class="card"><div class="ic">🎯</div><h3>Fits your schedule</h3><p>Part-time man o full-time, nasa Pilipinas ka man o abroad, pag-uusapan natin kung paano ito pwedeng i-fit sa buhay mo.</p></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap center">
+  <p class="eyebrow">How it works</p>
+  <h2>Three simple steps</h2>
+  <p class="lead">No long forms, walang pilit na benta.</p>
+  <div class="steps" style="text-align:left">
+    <div class="step"><h3>Take the survey</h3><p>Ilang maiikling tanong lang tungkol sa 'yo at sa goals mo.</p></div>
+    <div class="step"><h3>Let's talk</h3><p>Itanong mo sa akin ang kahit ano sa 1:1 chat, kapag ready ka na.</p></div>
+    <div class="step"><h3>You decide</h3><p>Sumali, maghintay muna, o huwag nang ituloy. Okay lang sa akin ang kahit alin diyan.</p></div>
+  </div>
+</div></section>
+
+<section id="about" style="background:#fff"><div class="wrap about">
+  <img id="aboutImg" alt="Turnover ng susi sa isang pamilya">
+  <div>
+    <p class="eyebrow">Meet Cynthia</p>
+    <h2>I help families get the keys to their home</h2>
+    <p>Ako si Cynthia M. Martin, o mas kilala bilang Mommy Property Finder. Tinutulungan ko ang mga pamilyang Pilipino at OFW na makahanap at makabili ng sarili nilang bahay.</p>
+    <p>Ang hanap ko: mga taong may care sa client, marunong tumupad sa usapan, at gustong matuto ng negosyong ito sa tamang paraan.</p>
+    <button class="btn cta glow" data-open>Could This Be My Next Career?</button>
+  </div>
+</div></section>
+
+<section id="team"><div class="wrap center">
+  <p class="eyebrow">Meet the team</p>
+  <h2>The people on my team</h2>
+  <p class="lead">Ilang larawan mula sa mga meetup at get-together namin.</p>
+  <div class="grid tgrid" id="teamGrid"></div>
+  <p class="swipe">Swipe para makita ang iba &rarr;</p>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="center"><p class="eyebrow">FAQ</p><h2>Questions you might have</h2><p class="lead">Short answers muna dito. May iba ka pang tanong? I-type mo lang sa survey at ako mismo ang sasagot.</p></div>
+  <div class="faq">
+    <details><summary>Do I need experience to start?</summary><p>Hindi kailangan ng sales background. Mas importante na reliable ka, willing kang matuto, at marunong mag-follow up sa mga tao.</p></details>
+    <details><summary>Do I need a license?</summary><p>Regulated ang real estate sa Pilipinas, kaya may requirements para sa license. I-explain ko sa 'yo kung ano 'yon at kung paano ito mag-fit sa sitwasyon mo.</p></details>
+    <details><summary>How do agents get paid?</summary><p>Commission-based ito, kaya walang fixed na sweldo kada buwan. Kumikita ka kapag may na-close na deal, at minsan matagal ang process. I-explain ko kung paano ito gumagana.</p></details>
+    <details><summary>Is there a fee to join?</summary><p>Magtanong ka palagi tungkol sa gastos bago sumali sa kahit anong team, kasama na ako. Sasagutin ko 'yan nang malinaw sa usapan natin, para alam mo na ang lahat bago ka mag-decide.</p></details>
+    <details><summary>Can I do this part-time or while abroad?</summary><p>Madalas itong itanong. Depende sa dami ng oras na kaya mong ibigay kada araw, kasi mahalaga ang follow-up sa client. Dalhin mo lang ang schedule mo sa chat at pag-usapan natin.</p></details>
+    <details><summary>Will I be trained?</summary><p>Malaking part ng unang mga buwan ang pag-aaral ng trabaho. Sasabihin ko sa 'yo kung anong guidance ang makukuha mo kapag nag-usap tayo.</p></details>
+    <details><summary>How fast can I earn?</summary><p>Walang makakapangako niyan nang honest, kasama ako. Pwedeng mabagal ang income sa unang mga buwan, kaya mas okay na may iba ka pang source of income habang nag-i-start ka.</p></details>
+    <details><summary>What happens after I submit?</summary><p>Babasahin ko ang sagot mo, tapos tatawagan o i-e-email kita para sa next step. May confirmation email ka rin.</p></details>
+  </div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Ready to find out if this is for you?</h2>
+  <p>Two minutes lang, walang pressure. Hindi ako mangangako ng mabilis na income, pero sasabihin ko ang totoo. Basta honest ka sa sagot mo, honest din ako sa 'yo.</p>
+  <button class="btn cta glow" data-open>Could This Be My Next Career?</button>
+</div></section>
+
+<footer><div class="wrap">
+  <p>© <span id="yr"></span> Cynthia M. Martin (Mommy Property Finder). Affiliated sa InnerSparc Realty Corporation.</p>
+  <p>Commission-based ang income sa real estate at iba-iba ang kita. Walang guaranteed na income.</p>
+</div></footer>
+
+<!-- Team photo viewer -->
+<div id="lb" role="dialog" aria-modal="true" aria-label="Team photos">
+  <button class="lbb" id="lbX" aria-label="Close photo">&times;</button>
+  <button class="lbb" id="lbP" aria-label="Previous photo">&#8249;</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+  <button class="lbb" id="lbN" aria-label="Next photo">&#8250;</button>
+</div>
+
+<!-- Survey modal -->
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="panel">
+    <button class="x" data-close aria-label="Close survey">&times;</button>
+    <div id="flow">
+      <p class="stepnote" id="stepNote">Step 1 of 3</p>
+      <h3 id="mTitle">Let's start with you</h3>
+      <div class="bar"><i id="barFill"></i></div>
+      <form id="f" novalidate autocomplete="on">
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="pg" data-p="1">
+          <div class="notice">📌 <strong>Before you start:</strong> Real estate is <strong>commission-based</strong>. There is no fixed monthly salary and no guaranteed income. You earn when a deal closes.</div>
+          <label for="location">Where are you based?</label>
+          <span class="hint">Choose your city or town. Pick "Other province" if it is not on the list.</span>
+          <select id="location" name="location"><option value="">Select</option><optgroup label="Bulacan"><option value="Bulacan - Angat">Angat</option><option value="Bulacan - Balagtas">Balagtas</option><option value="Bulacan - Baliuag">Baliuag</option><option value="Bulacan - Bocaue">Bocaue</option><option value="Bulacan - Bulakan">Bulakan</option><option value="Bulacan - Bustos">Bustos</option><option value="Bulacan - Calumpit">Calumpit</option><option value="Bulacan - Doña Remedios Trinidad">Doña Remedios Trinidad</option><option value="Bulacan - Guiguinto">Guiguinto</option><option value="Bulacan - Hagonoy">Hagonoy</option><option value="Bulacan - Malolos">Malolos</option><option value="Bulacan - Marilao">Marilao</option><option value="Bulacan - Meycauayan">Meycauayan</option><option value="Bulacan - Norzagaray">Norzagaray</option><option value="Bulacan - Obando">Obando</option><option value="Bulacan - Pandi">Pandi</option><option value="Bulacan - Paombong">Paombong</option><option value="Bulacan - Plaridel">Plaridel</option><option value="Bulacan - Pulilan">Pulilan</option><option value="Bulacan - San Ildefonso">San Ildefonso</option><option value="Bulacan - San Jose del Monte">San Jose del Monte</option><option value="Bulacan - San Miguel">San Miguel</option><option value="Bulacan - San Rafael">San Rafael</option><option value="Bulacan - Santa Maria">Santa Maria</option></optgroup><optgroup label="Cavite"><option value="Cavite - Alfonso">Alfonso</option><option value="Cavite - Amadeo">Amadeo</option><option value="Cavite - Bacoor">Bacoor</option><option value="Cavite - Carmona">Carmona</option><option value="Cavite - Cavite City">Cavite City</option><option value="Cavite - Dasmariñas">Dasmariñas</option><option value="Cavite - General Emilio Aguinaldo">General Emilio Aguinaldo</option><option value="Cavite - General Mariano Alvarez">General Mariano Alvarez</option><option value="Cavite - General Trias">General Trias</option><option value="Cavite - Imus">Imus</option><option value="Cavite - Indang">Indang</option><option value="Cavite - Kawit">Kawit</option><option value="Cavite - Magallanes">Magallanes</option><option value="Cavite - Maragondon">Maragondon</option><option value="Cavite - Mendez">Mendez</option><option value="Cavite - Naic">Naic</option><option value="Cavite - Noveleta">Noveleta</option><option value="Cavite - Rosario">Rosario</option><option value="Cavite - Silang">Silang</option><option value="Cavite - Tagaytay">Tagaytay</option><option value="Cavite - Tanza">Tanza</option><option value="Cavite - Ternate">Ternate</option><option value="Cavite - Trece Martires">Trece Martires</option></optgroup><option>Other province in the Philippines</option></select><div class="err"></div>
+          <div id="locMore" class="more hidden"><label for="locDetail" id="locLbl">Which city or country?</label><input id="locDetail" name="locationDetail"><div class="err"></div></div>
+          <label for="work">What's your current work?</label><span class="hint">No wrong answer. This helps Cynthia understand your schedule.</span>
+          <select id="work" name="work"><option value="">Select</option><option>Employed in the Philippines</option><option>OFW / working abroad</option><option>Business owner / self-employed</option><option>Student or fresh graduate</option><option>Stay-at-home / between jobs</option><option>Others</option></select><div class="err"></div>
+          <div id="workMore" class="more hidden"><label for="workDetail">Please specify</label><input id="workDetail" name="workDetail" placeholder="e.g. Teacher, Nurse, Driver" maxlength="80"><div class="err"></div></div>
+          <label for="heard">How did you hear about us?</label>
+          <select id="heard" name="heard"><option value="">Select</option><option>Facebook</option><option>Friend or family</option><option>Google search</option><option>Others</option></select><div class="err"></div>
+          <div id="heardMore" class="more hidden"><label for="heardDetail">Please specify</label><input id="heardDetail" name="heardDetail" placeholder="Where did you hear about this?" maxlength="80"><div class="err"></div></div>
+        </div>
+        <div class="pg hidden" data-p="2">
+          <label for="exp">Have you worked in real estate before?</label><span class="hint">It's okay if you're brand new.</span>
+          <select id="exp" name="experience"><option value="">Select</option><option>No, I'm brand new</option><option>Less than 1 year</option><option>1 to 3 years</option><option>More than 3 years</option></select><div class="err"></div>
+          <label for="lic">Where are you in your real estate license journey?</label><span class="hint">No license yet? That's okay. This helps Cynthia understand where you are in the process.</span>
+          <select id="lic" name="license"><option value="">Select</option><option>Licensed already</option><option>Currently preparing for the license</option><option>Planning to take the license</option><option>Not yet started</option><option>I need more information</option></select><div class="err"></div>
+          <label for="hrs">How much time can you give to this each day?</label><span class="hint">Be realistic. Consistency matters more than long hours.</span>
+          <select id="hrs" name="hours"><option value="">Select</option><option>Less than 1 hour</option><option>1 to 2 hours</option><option>3 to 4 hours</option><option>5 hours or more</option></select><div class="err"></div>
+          <label for="start">When are you hoping to start?</label><span class="hint">No pressure. This just helps Cynthia plan your first chat.</span>
+          <select id="start" name="start"><option value="">Select</option><option>Within 1 to 2 days</option><option>In 1 week</option><option>Within 2 weeks</option><option>Within a month</option></select><div class="err"></div>
+          <label for="why">What's your main reason for becoming an agent?</label><span class="hint">Pick the closest one.</span>
+          <select id="why" name="why"><option value="">Select</option><option>I want extra income</option><option>I want a full-time career in real estate</option><option>I want to help families find their home</option><option>I want a flexible schedule</option><option>I'm an OFW and want something to build back home</option><option>Others</option></select><div class="err"></div>
+          <div id="whyMore" class="more hidden"><label for="whyDetail">Tell us your reason</label><textarea id="whyDetail" name="whyDetail" style="min-height:70px" placeholder="Type your answer here" maxlength="400"></textarea><div class="err"></div></div>
+        </div>
+        <div class="pg hidden" data-p="3">
+          <label for="name">Full name</label><input id="name" name="name" placeholder="First name and last name" autocomplete="name" autocapitalize="words" maxlength="80"><div class="err"></div>
+          <label for="email">Email</label><span class="hint">Your welcome email will be sent here.</span><input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" maxlength="120"><div class="err"></div>
+          <label for="phone">Mobile number</label><span class="hint">Cynthia may call or text this number.</span><input id="phone" name="phone" type="tel" placeholder="0917 123 4567" autocomplete="tel" inputmode="tel" maxlength="20"><div class="err"></div>
+          <label for="bestTime">What's the best time to reach you?</label><span class="hint">Cynthia will try to call or message you then.</span>
+          <select id="bestTime" name="bestTime"><option value="">Select</option><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Weekends</option><option>Anytime</option></select><div class="err"></div>
+          <label for="q">Anything you'd like to ask Cynthia? (optional)</label>
+          <textarea id="q" name="question" style="min-height:70px"></textarea>
+          <label class="chk"><input type="checkbox" id="ack" name="ack"><span><strong>I understand this is commission-based.</strong> There is no fixed salary and no guaranteed income.</span></label><div class="err"></div>
+          <label class="chk"><input type="checkbox" id="consent" name="consent"><span>I agree to be contacted by Cynthia M. Martin about becoming an agent.</span></label><div class="err"></div>
+        </div>
+        <div class="err" id="formErr" role="alert"></div>
+        <div class="nav-btns">
+          <button type="button" class="btn back hidden" id="back">Back</button>
+          <button type="button" class="btn" id="next">Next</button>
+        </div>
+      </form>
+    </div>
+    <div class="done hidden" id="done">
+      <div class="tick">✓</div>
+      <h3>You're in, <span id="doneName"></span>!</h3>
+      <p style="color:var(--mute);margin:10px 0 18px">Thanks for sharing. Check your inbox for a welcome email. Cynthia will reach out to you about the next step.</p>
+      <button class="btn" data-close>Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ===== CONFIG ===== */
+var CFG = {
+  // Apps Script /exec URL, only used when this page is hosted outside Apps Script (e.g. Vercel later)
+  WEB_APP_URL: 'https://script.google.com/macros/s/AKfycbxIqogX0b8_vvEEkk5iX394UJcPK0HB4jN2AXT-sra-SrYA7ZW_2_t3hX7GjObpyb5y/exec',
+  LOGO_ID: '1KdxbH74HfnrhZMXaigXV-m8MzuK2TQ4N',
+  HERO_ID: '1st9mDJcHanBFHlxiWI3Z-NnGfrbmsWJi',
+  TURNOVER_ID: '13_WDY_0OfyXW3HHiNuJdfj2lf6wsXLEb'
+};
+var IN_GAS = !!(window.google && google.script && google.script.run);
+function drive(id, w){ return 'https://drive.google.com/thumbnail?id=' + id + '&sz=w' + (w || 800); }
+
+/* dual-mode API: Apps Script now, fetch on Vercel later */
+function apiPost(payload, ok, fail){
+  if (IN_GAS) {
+    google.script.run.withSuccessHandler(ok).withFailureHandler(fail).submitRecruitSurvey(payload);
+  } else {
+    payload.type = 'recruit';
+    fetch(CFG.WEB_APP_URL, { method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain'}, body: JSON.stringify(payload) })
+      .then(function(){ ok({ok:true}); }).catch(fail);
+  }
+}
+
+/* images + loader */
+['ldLogo','navLogo'].forEach(function(id){ document.getElementById(id).src = drive(CFG.LOGO_ID, 200); });
+document.getElementById('heroImg').src = drive(CFG.HERO_ID, 800);
+document.getElementById('aboutImg').src = drive(CFG.TURNOVER_ID, 900);
+document.querySelectorAll('img[data-d]').forEach(function(im){ im.src = drive(im.getAttribute('data-d'), 700); });
+document.getElementById('yr').textContent = new Date().getFullYear();
+function startEntrance(){ document.body.classList.add('ready'); }
+window.addEventListener('load', function(){ setTimeout(function(){ document.getElementById('loader').classList.add('hide'); startEntrance(); }, 500); });
+setTimeout(startEntrance, 3000); // safety: never leave the hero hidden
+
+/* modal + survey */
+var modal = document.getElementById('modal'), page = 1, lastFocus = null;
+var titles = ["Let's start with you", 'A bit about your background', 'Where can Cynthia reach you?'];
+var $ = function(s, c){ return (c || document).querySelector(s); };
+
+function openModal(){ lastFocus = document.activeElement; modal.classList.add('open'); document.body.style.overflow = 'hidden'; setTimeout(function(){ $('#location').focus(); }, 60); }
+function closeModal(){ modal.classList.remove('open'); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+document.querySelectorAll('[data-open]').forEach(function(b){ b.addEventListener('click', openModal); });
+document.querySelectorAll('[data-close]').forEach(function(b){ b.addEventListener('click', closeModal); });
+modal.addEventListener('mousedown', function(e){ if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', function(e){
+  if (!modal.classList.contains('open')) return;
+  if (e.key === 'Escape') closeModal();
+  if (e.key === 'Tab') { // keep focus inside the dialog
+    var f = modal.querySelectorAll('button:not(.hidden),input:not(.hp),select,textarea,a[href]');
+    f = Array.prototype.filter.call(f, function(x){ return x.offsetParent !== null; });
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+});
+
+function show(n){
+  page = n;
+  document.querySelectorAll('.pg').forEach(function(p){ p.classList.toggle('hidden', +p.dataset.p !== n); });
+  $('#stepNote').textContent = 'Step ' + n + ' of 3';
+  $('#mTitle').textContent = titles[n - 1];
+  $('#barFill').style.width = (n * 33.4) + '%';
+  $('#back').classList.toggle('hidden', n === 1);
+  $('#next').textContent = n === 3 ? 'Submit' : 'Next';
+  $('#formErr').textContent = '';
+}
+
+function setErr(el, msg){ var e = el.type === 'checkbox' ? el.closest('label').nextElementSibling : el.nextElementSibling; if (e && e.classList.contains('err')) e.textContent = msg || ''; }
+
+function validate(n){
+  var ok = true, first = null;
+  document.querySelectorAll('.pg[data-p="' + n + '"] input:not(.hp), .pg[data-p="' + n + '"] select, .pg[data-p="' + n + '"] textarea').forEach(function(el){
+    var v = (el.type === 'checkbox' ? el.checked : el.value.trim()), msg = '';
+    if (el.id === 'q') return;
+    var more = el.closest('.more'); if (more && more.classList.contains('hidden')) return; // hidden "Others" boxes are not required
+    if (!v) msg = el.id === 'ack' ? 'Please confirm that you understand this is commission-based.' : el.type === 'checkbox' ? 'Please tick this to continue.' : el.tagName === 'SELECT' ? 'Please select one.' : 'This field is required.';
+    else if (el.id === 'name' && !/^\S{2,}(\s+\S+)+$/.test(v)) msg = 'Please enter your first and last name.';
+    else if (el.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) msg = 'Enter a valid email, like you@email.com.';
+    else if (el.type === 'email' && emailTypo(v)) msg = 'Did you mean ' + emailTypo(v) + '?';
+    else if (el.type === 'tel' && !normalizePhone(v)) msg = 'Enter a valid mobile number, like 0917 123 4567 or +63 917 123 4567.';
+    else if (el.id === 'whyDetail' && v.length < 5) msg = 'Tell us a little more (a few words is fine).';
+    else if (el.id === 'workDetail' && v.length < 2) msg = 'Please tell us what you do.';
+    else if (el.id === 'heardDetail' && v.length < 2) msg = 'Please tell us where you heard about us.';
+    else if (el.id === 'ack') msg = el.checked ? '' : 'Please confirm that you understand this is commission-based.';
+    setErr(el, msg);
+    if (msg) { ok = false; if (!first) first = el; }
+  });
+  if (first) { first.focus(); if (first.scrollIntoView) first.scrollIntoView({ block: 'center' }); }
+  return ok;
+}
+
+$('#back').addEventListener('click', function(){ show(page - 1); });
+$('#next').addEventListener('click', function(){
+  if (!validate(page)) return;
+  if (page < 3) { show(page + 1); return; }
+  submit();
+});
+$('#f').addEventListener('keydown', function(e){ if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') { e.preventDefault(); $('#next').click(); } });
+
+$('#location').addEventListener('change', function(){
+  var v = this.value, more = $('#locMore'), other = v === 'Other province in the Philippines';
+  more.classList.toggle('hidden', !other);
+  $('#locLbl').textContent = 'Which province and city?';
+  if (!other) $('#locDetail').value = '';
+});
+
+/* input helpers: phone format, email typos, "Others" boxes */
+function normalizePhone(v){
+  var s = String(v).replace(/[\s\-().]/g, '');
+  if (/^(\+63|63)9\d{9}$/.test(s)) { s = s.replace(/^\+?63/, ''); return '+63 ' + s.slice(0,3) + ' ' + s.slice(3,6) + ' ' + s.slice(6); }
+  if (/^09\d{9}$/.test(s)) return s.slice(0,4) + ' ' + s.slice(4,7) + ' ' + s.slice(7);
+  if (/^9\d{9}$/.test(s)) return '0' + s.slice(0,3) + ' ' + s.slice(3,6) + ' ' + s.slice(6);
+  if (/^\+\d{8,15}$/.test(s)) return s; // overseas numbers
+  return null;
+}
+var TYPOS = {'gmial.com':'gmail.com','gmai.com':'gmail.com','gamil.com':'gmail.com','gnail.com':'gmail.com','gmail.con':'gmail.com','gmail.co':'gmail.com',
+  'yaho.com':'yahoo.com','yahooo.com':'yahoo.com','yahoo.con':'yahoo.com','hotmial.com':'hotmail.com','hotmail.con':'hotmail.com','outlok.com':'outlook.com'};
+function emailTypo(v){ var i = v.lastIndexOf('@'), fix = TYPOS[v.slice(i + 1).toLowerCase()]; return fix ? v.slice(0, i + 1) + fix : ''; }
+$('#phone').addEventListener('blur', function(){ var n = normalizePhone(this.value); if (n) this.value = n; });
+[['work','workMore','workDetail'],['why','whyMore','whyDetail'],['heard','heardMore','heardDetail']].forEach(function(x){
+  $('#' + x[0]).addEventListener('change', function(){
+    var on = this.value === 'Others'; $('#' + x[1]).classList.toggle('hidden', !on);
+    if (on) $('#' + x[2]).focus(); else $('#' + x[2]).value = '';
+  });
+});
+
+function resetUI(){
+  ['location','work','heard','exp','lic','hrs','start','why','bestTime'].forEach(function(id){ $('#' + id).value = ''; });
+  ['locMore','workMore','heardMore','whyMore'].forEach(function(id){ $('#' + id).classList.add('hidden'); });
+}
+
+function submit(){
+  var btn = $('#next'), fd = {};
+  new FormData($('#f')).forEach(function(v, k){ fd[k] = v; });
+  if (fd.website) { return; } // honeypot
+  if (fd.locationDetail) fd.location += ' - ' + fd.locationDetail;
+  if (fd.work === 'Others' && fd.workDetail) fd.work = 'Others - ' + fd.workDetail.trim();
+  if (fd.why === 'Others' && fd.whyDetail) fd.why = 'Others - ' + fd.whyDetail.trim();
+  if (fd.heard === 'Others' && fd.heardDetail) fd.heard = 'Others - ' + fd.heardDetail.trim();
+  fd.name = (fd.name || '').trim().replace(/\s+/g, ' ');
+  fd.email = (fd.email || '').trim().toLowerCase();
+  fd.phone = normalizePhone(fd.phone) || fd.phone;
+  fd.consent = $('#consent').checked; fd.ack = $('#ack').checked; fd.source = 'recruitment-page'; fd.submittedAt = new Date().toISOString();
+  btn.disabled = true; btn.textContent = 'Sending...';
+  apiPost(fd, function(res){
+    btn.disabled = false;
+    if (res && res.ok === false) { $('#formErr').textContent = res.error || 'Something went wrong. Please try again.'; btn.textContent = 'Submit'; return; }
+    $('#doneName').textContent = (fd.name || '').split(' ')[0];
+    $('#flow').classList.add('hidden'); $('#done').classList.remove('hidden');
+    $('#f').reset(); resetUI();
+  }, function(){
+    btn.disabled = false; btn.textContent = 'Submit';
+    $('#formErr').textContent = 'Could not send. Check your connection and try again.';
+  });
+}
+/* team photos: one grid in "Meet the team"; every photo opens in a viewer */
+var TEAM = [
+  { id:'1WxUgrqln-6Xb9QEfvWEpuO-h5HkS_hgo', tag:'Office Team', title:'InnerSPARC Realty Team', desc:'Group photo ng InnerSPARC Realty Corporation team sa office. Makikita ang team members na magkakasama, welcoming, at ready magtulungan sa real estate journey.', pos:'center 58%' },
+  { id:'1gBM7ANSxMknilX8NsCxrQqxX5E0mgx8F', tag:'Office', title:'Team Huddle', desc:'Nag-aaral at nagkukuwentuhan ang team sa office. May presentation sa laptop tungkol sa pagiging resilient at consistent sa real estate, at naka-number one sign ang lahat!', pos:'center 35%' },
+  { id:'1zEOpNARYHToiIHuJvntABCM8A9N2qmDi', tag:'Day Out', title:'Team Day Out', desc:'Group selfie sa lobby ng isang building. Naka-InnerSparc jackets ang karamihan at may dalang team bags.', pos:'center 40%' },
+  { id:'1jbr4mb6fPhqxuUafxa8HLzy3e6yWNpr1', tag:'Dinner', title:'Team Dinner', desc:'Dinner sa private room. May presentation sa screen na \"Sales Activity Support - Raffle\" habang nagkakainan ang team.', pos:'center 72%' },
+  { id:'1bo7ki_QC4Palq5kdPV9txtrRcV_gIkqj', tag:'Coffee', title:'Coffee Meetup', desc:'Green iced drinks at kwentuhan sa isang cafe. Naka-InnerSparc jackets ang ilan sa team.', pos:'center 40%' },
+  { id:'1oGGCdlF7OqbDJt0WuF9mSPOI3d-gQ_GL', tag:'Get-together', title:'Food Get-together', desc:'Salu-salo sa kusina. May mga plato at tray ng pagkain, at nagtatawanan ang lahat.', pos:'center 40%' },
+  { id:'1VMzJ4I5EJMHFxessHkgfg3BoJ8Kafd69', tag:'Dinner', title:'Dinner Night', desc:'Dinner sa labas ng ilang kasama sa team. May mga ulam sa mesa at naka-number one sign ang lahat.', pos:'center 45%' },
+  { id:'1c-8loDUxQIXzoomiq_MHqfnGuAFUOvYO', tag:'Coffee', title:'Coffee Break', desc:'Kape at kwentuhan sa isang coffee shop, may box ng donuts sa mesa.', pos:'center 72%' }
+];
+TEAM.forEach(function(t, i){
+  var card = document.createElement('article'); card.className = 'tcard';
+  var b = document.createElement('button');
+  b.type = 'button'; b.className = 'timg'; b.setAttribute('aria-label', 'View photo: ' + t.title);
+  var im = document.createElement('img');
+  im.alt = 'Team photo: ' + t.title; im.loading = 'lazy'; im.style.objectPosition = t.pos; im.src = drive(t.id, 800);
+  im.onerror = function(){ // photo not shared / not loading: hide the card, and the whole section if none load
+    card.style.display = 'none';
+    var left = Array.prototype.filter.call(document.querySelectorAll('#teamGrid .tcard'), function(c){ return c.style.display !== 'none'; });
+    if (!left.length) $('#team').style.display = 'none';
+  };
+  var tag = document.createElement('span'); tag.className = 'tbadge'; tag.textContent = t.tag;
+  b.appendChild(im); b.appendChild(tag);
+  b.addEventListener('click', function(){ openLb(i); });
+  var body = document.createElement('div'); body.className = 'tbody';
+  var h3 = document.createElement('h3'); h3.textContent = t.title;
+  var p = document.createElement('p'); p.textContent = t.desc;
+  body.appendChild(h3); body.appendChild(p);
+  card.appendChild(b); card.appendChild(body);
+  $('#teamGrid').appendChild(card);
+});
+var lb = $('#lb'), lbIdx = 0, lbFrom = null;
+function showLb(i){
+  lbIdx = (i + TEAM.length) % TEAM.length;
+  $('#lbImg').src = drive(TEAM[lbIdx].id, 1600); $('#lbImg').alt = 'Team photo: ' + TEAM[lbIdx].title;
+  $('#lbCap').textContent = TEAM[lbIdx].title + ': ' + TEAM[lbIdx].desc + '  (' + (lbIdx + 1) + ' of ' + TEAM.length + ')';
+}
+function openLb(i){ lbFrom = document.activeElement; showLb(i); lb.classList.add('open'); document.body.style.overflow = 'hidden'; $('#lbX').focus(); }
+function closeLb(){ lb.classList.remove('open'); document.body.style.overflow = ''; $('#lbImg').removeAttribute('src'); if (lbFrom) lbFrom.focus(); }
+$('#lbX').addEventListener('click', closeLb);
+$('#lbP').addEventListener('click', function(){ showLb(lbIdx - 1); });
+$('#lbN').addEventListener('click', function(){ showLb(lbIdx + 1); });
+lb.addEventListener('mousedown', function(e){ if (e.target === lb) closeLb(); });
+document.addEventListener('keydown', function(e){
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLb();
+  else if (e.key === 'ArrowLeft') showLb(lbIdx - 1);
+  else if (e.key === 'ArrowRight') showLb(lbIdx + 1);
+});
+
+/* entrance animations: hero on load, everything else as it scrolls into view */
+(function(){
+  function tag(el, cls, delay){ if (!el) return; el.classList.add.apply(el.classList, cls.split(' ')); el.style.setProperty('--d', delay + 's'); }
+  var hero = document.querySelector('.hero');
+  var left = hero.querySelector('.wrap > div');
+  [['.eyebrow',.1],['h1',.25],['p:not(.eyebrow)',.4],['.btn',.55],['small',.7]].forEach(function(x){ tag(left.querySelector(x[0]), 'hero-in', x[1]); });
+  tag(hero.querySelector('.portrait'), 'hero-in pop', .3);
+
+  var phone = window.matchMedia && window.matchMedia('(max-width:700px)').matches;
+  document.querySelectorAll('section').forEach(function(sec){
+    [['.eyebrow',0],['h2',.08],['.lead',.16]].forEach(function(x){ tag(sec.querySelector(x[0]), 'reveal', x[1]); });
+    sec.querySelectorAll('.grid,.steps,.faq').forEach(function(box){
+      if (phone && (box.id === 'painGrid' || box.id === 'teamGrid')) return; // swipe rows: no scroll-reveal
+      Array.prototype.forEach.call(box.children, function(c, i){ tag(c, 'reveal', Math.min(i * .09, .45)); });
+    });
+    tag(sec.querySelector('.pain-turn'), 'reveal', .1);
+    tag(sec.querySelector('.final p'), 'reveal', .16);
+    if (sec.classList.contains('final')) { tag(sec.querySelector('p'), 'reveal', .16); tag(sec.querySelector('.btn'), 'reveal zoom', .28); }
+  });
+  var about = document.querySelector('.about');
+  tag(about.querySelector('img'), 'reveal left', 0);
+  tag(about.querySelector('div'), 'reveal right', .12);
+  tag(about.querySelector('.btn'), 'reveal', .35);
+
+  var items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { items.forEach(function(el){ el.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting) return;
+      var el = e.target; el.classList.add('in'); io.unobserve(el);
+      el.addEventListener('transitionend', function done(ev){
+        if (ev.target !== el || ev.propertyName !== 'transform') return;
+        el.removeEventListener('transitionend', done);
+        el.classList.remove('reveal', 'in', 'left', 'right', 'zoom'); el.style.removeProperty('--d');
+      });
+    });
+  }, { threshold: .15, rootMargin: '0px 0px -6% 0px' });
+  items.forEach(function(el){ io.observe(el); });
+})();
+
+show(1);
+</script>
+</body>
+</html>
