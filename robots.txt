@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mpf-agent-recruitment.vercel.app/sitemap.xml
