@@ -129,10 +129,9 @@ select{-webkit-appearance:none;appearance:none;padding-right:42px;background:#ff
 .tgrid .tcard:last-child:nth-child(3n+1),.tgrid .tcard:last-child:nth-child(2n+1){grid-column:auto;width:auto;justify-self:stretch}
 @media(max-width:600px){#painGrid,#teamGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.tgrid .tcard:last-child:nth-child(n){grid-column:auto;width:auto}}
 .tcard{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 10px 28px rgba(11,31,77,.10);text-align:left;transition:transform .25s,box-shadow .25s}
-.tcard:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(11,31,77,.16)}
-.timg{position:relative;display:block;width:100%;padding:0;border:0;background:#dfe3ee;cursor:zoom-in;aspect-ratio:3/2;overflow:hidden}
-.timg img{width:100%;height:100%;max-width:none;object-fit:cover;transition:transform .5s}
-.tcard:hover .timg img{transform:scale(1.04)}
+.tcard:hover{box-shadow:0 16px 34px rgba(11,31,77,.16)}
+.timg{position:relative;display:block;width:100%;padding:0;border:0;background:#dfe3ee;cursor:pointer;aspect-ratio:3/2;overflow:hidden}
+.timg img{width:100%;height:100%;max-width:none;object-fit:cover}
 .timg:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
 .tbadge{position:absolute;top:12px;left:12px;background:var(--gold);color:#fff;font:700 .78rem var(--sans);padding:6px 14px;border-radius:999px;box-shadow:0 3px 8px rgba(0,0,0,.18)}
 .tbody{padding:16px 18px 20px}
@@ -140,6 +139,9 @@ select{-webkit-appearance:none;appearance:none;padding-right:42px;background:#ff
 .tbody p{color:var(--ink);font-size:.93rem;line-height:1.55}
 .story-group{margin-top:34px}.story-group:first-of-type{margin-top:24px}.story-group h3{text-align:left;color:var(--navy);font-size:1.22rem;margin:0 0 14px;padding-left:14px;border-left:4px solid var(--gold)}
 .story-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;text-align:left}
+#painGrid .pimg{aspect-ratio:1/1}
+#stories .timg,#teamGrid .timg{aspect-ratio:4/3;height:auto;background:#eef0f6}
+#stories .timg img,#teamGrid .timg img{display:block;width:100%;height:100%;object-fit:contain;background:#eef0f6}
 #lb{position:fixed;inset:0;background:rgba(6,14,38,.93);display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px;z-index:160;padding:16px}
 #lb.open{display:flex}
 #lb img{max-width:min(94vw,1100px);max-height:78vh;width:auto;height:auto;border-radius:10px;object-fit:contain;background:#0a1a45}
